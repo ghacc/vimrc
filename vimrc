@@ -41,6 +41,8 @@ set incsearch
 " default.
 set hlsearch
 " Enables automatic C program indenting.
+set autoindent
+set breakindent
 set cindent
 " Show the line and column number of the cursor position, separated by a comma.
 set ruler
