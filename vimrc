@@ -4,6 +4,7 @@ command! Vimrc vsplit ~/.vimrc
 command! SourceVimrc source ~/.vimrc
 set background=dark
 syntax enable
+set term=screen-256color
 " Disable vi compatibility
 set nocompatible
 " Set default encoding
