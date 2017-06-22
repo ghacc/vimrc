@@ -4,7 +4,7 @@ command! Vimrc vsplit ~/.vimrc
 command! SourceVimrc source ~/.vimrc
 set background=dark
 syntax enable
-set term=screen-256color
+set term=xterm-256color
 " Disable vi compatibility
 set nocompatible
 " Set default encoding
@@ -21,8 +21,6 @@ set showmatch
 set formatoptions=crqn
 " Enable mouse support
 set mouse=a
-" Use visualbell
-set visualbell
 " Print the line number in front of each line.
 set number
 " Changes the displayed number to be relative to the cursor.
@@ -102,6 +100,7 @@ nnoremap k gk
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
+map zz :q!<CR>
 
 """"""""""
 " Plugins
@@ -116,7 +115,8 @@ Plug 'https://github.com/ryanoasis/vim-devicons.git'
 Plug 'itchyny/lightline.vim'
 Plug 'dracula/vim'
 Plug 'https://github.com/Yggdroot/indentLine.git'
-Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+" Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+" Plug 'https://github.com/rstacruz/sparkup.git'
 
 call plug#end()
 
@@ -131,7 +131,14 @@ let g:lightline = {
 " Show indentation
 let g:indentLine_char = '¦'
 " ControlP Mappings
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+" let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_cmd = 'CtrlP'
+" Sparkup Mappings
+let g:sparkupMaps = 0
+let g:sparkupExecuteMapping = '<c-e>'
+let g:sparkupNextMapping = '<c-j>'
+
 
 color dracula
+
+
